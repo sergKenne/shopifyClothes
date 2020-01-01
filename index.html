@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="close store">
+		<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+		<meta name="author" content="Serge Kenne">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Clothes store | Clothes store</title>
+		<!-- <link href="//fonts.googleapis.com/css?family=Lato:100,300,400,400italic,700,900" rel="stylesheet" type="text/css"> -->
+		<!-- <link rel="stylesheet" href="css/font-awesome.css"> -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/flexslider.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="wrapper" id="app">
+			<header class="header">
+				<div class="container">
+					<div class="header__top">
+						<ul class="top-list header__top-list clearfix">
+							<li class="top-list__item"><a href="#" class="top-list__link">login in <i class="fas fa-lock top-list__icon"></i></a></li>
+							<li class="top-list__item"><a href="#" class="top-list__link">create an account <i class="fas fa-user top-list__icon"></i></a></li>
+							<li class="top-list__item"><a href="#" class="top-list__link">check out <i class="fas fa-arrow-right top-list__icon"></i></a></li>
+							<li class="top-list__item">
+								<select name="" id="">
+									<option value="USD">USD</option>
+									<option value="GBP">GBP</option>
+									<option value="EUR">EUR</option>
+								</select>
+							</li>
+						</ul>
+					</div>
+					<div class="header__content clearfix"> 
+						<a href="index.html" class="header__logo">
+							<img class="header__logo-picture" src="img/logo1.jpg" alt="log">
+							<!-- <span class="header__big-logo">clothes</span><br><span class="header__small-logo">store</span> -->
+						</a>
+						<form class="form-search header__form-search">
+							<input type="text" class="form-search__input">
+							<span class="form-search__btn"><button class="btn" type="submit">search</button></span>
+						</form>
+						<div class="header__shopping">
+							<a href="#" class="shopping">
+								<span class="shopping__header">shopping</span><br>
+								<span class="shopping__text">cart: <span class="shopping__counter">0</span></span>
+								<img src="img/shopping_cart_bg.png" class="shopping__cart"> 
+							</a>
+						</div>
+					</div>
+				</div>
+			</header>
+			<nav class="navbar" id="mainnav">
+				<div class="container">
+					<div class="navbar__menu" id="main-btn-js">shirts & blouses 
+						<span class="menu-icon navbar__menu-icon">
+							<i class="menu-icon__plus fas fa-plus-square"></i>
+							<i class="menu-icon__minus fas fa-minus-square"></i>
+						</span>
+					</div>
+					<ul class="navbar__list clearfix" id="main-list-js">
+						<li class="navbar__item"><a href="index.html" class="navbar__link navbar__link--active"><span class="navbar__inner">home</span></a></li>
+						<li class="navbar__item">
+							<a href="#" class="navbar__link">
+								<span class="navbar__inner">catalog<i class="fas fa-angle-down navbar__icon"></i>
+									<span class="menu-icon navbar__inner-icon" id="nav-btn-js">
+										<i class="menu-icon__plus fas fa-plus-square"></i>
+										<i class="menu-icon__minus fas fa-minus-square"></i>
+									</span>
+								</span>
+							</a>
+							<ul class="navbar__sub-list clearfix" id="nav-list-js">
+								<li class="navbar__sub-item">
+									<ul class="navbar__element-list">
+										<li class="navbar__element-item navbar__element-item--header">lorem ipsum
+											<span class="menu-icon navbar__element-icon element-btn-js">
+												<i class="menu-icon__plus fas fa-plus-square"></i>
+												<i class="menu-icon__minus fas fa-minus-square"></i>
+											</span>
+										</li>
+										<div class="navbar__element-sub-item element-item-js">
+											<li class="navbar__element-item"><a href="#" class="navbar__element-link">basics</a></li>
+											<li class="navbar__element-item"><a href="#" class="navbar__element-link">blazers & kimonos</a></li>
+											<li class="navbar__element-item"><a href="#" class="navbar__element-link">cardigans & sweaters</a></li>
+											<li class="navbar__element-item"><a href="#" class="navbar__element-link">dresses</a></li>
+											<li class="navbar__element-item"><a href="#" class="navbar__element-link">jackets & coats</a></li>
+										</div>
+									</ul>
+								</li>
+								<li class="navbar__sub-item">
+									<ul class="navbar__element-list">
+										<li class="navbar__element-item navbar__element-item--header">dolor
+											<span class="menu-icon navbar__element-icon element-btn-js">
+												<i class="menu-icon__plus fas fa-plus-square"></i>
+												<i class="menu-icon__minus fas fa-minus-square"></i>
+											</span>
+										</li>
+										<div class="navbar__element-sub-item element-item-js">
+											<li class="navbar__element-item"><a href="#" class="navbar__element-link">jeans</a></li>
+											<li class="navbar__element-item"><a href="#" class="navbar__element-link">lingerie</a></li>
+											<li class="navbar__element-item"><a href="#" class="navbar__element-link">pants</a></li>
+											<li class="navbar__element-item"><a href="#" class="navbar__element-link">shirts & blouses</a></li>
+											<li class="navbar__element-item"><a href="#" class="navbar__element-link">shorts</a></li>
+										</div>
+									</ul>
+								</li>
+								<li class="navbar__sub-item">
+									<ul class="navbar__element-list">
+										<li class="navbar__element-item navbar__element-item--header">sit amet
+											<span class="menu-icon navbar__element-icon element-btn-js">
+												<i class="menu-icon__plus fas fa-plus-square"></i>
+												<i class="menu-icon__minus fas fa-minus-square"></i>
+											</span>
+										</li>
+										<div class="navbar__element-sub-item element-item-js">
+											<li class="navbar__element-item"><a href="#" class="navbar__element-link">tops</a></li>
+											<li class="navbar__element-item"><a href="#" class="navbar__element-link">skirts</a></li>
+											<li class="navbar__element-item"><a href="#" class="navbar__element-link">shorts</a></li>
+											<li class="navbar__element-item"><a href="#" class="navbar__element-link">Jackets & Coats</a></li>
+											<li class="navbar__element-item"><a href="#" class="navbar__element-link">pants</a></li> 
+										</div>
+									</ul>
+								</li>
+								<li class="navbar__sub-item">
+									<ul class="navbar__element-list">
+										<li class="navbar__element-item navbar__element-item--header">adipisicing elit
+											<span class="menu-icon navbar__element-icon element-btn-js">
+												<i class="menu-icon__plus fas fa-plus-square"></i>
+												<i class="menu-icon__minus fas fa-minus-square"></i>
+											</span>
+										</li>
+										<div class="navbar__element-sub-item element-item-js">
+											<li class="navbar__element-item"><a href="#" class="navbar__element-link">jeans</a></li>
+											<li class="navbar__element-item"><a href="#" class="navbar__element-link">blazers & kimonos</a></li>
+											<li class="navbar__element-item"><a href="#" class="navbar__element-link">dressers</a></li>
+											<li class="navbar__element-item"><a href="#" class="navbar__element-link">lingeries</a></li>
+											<li class="navbar__element-item"><a href="#" class="navbar__element-link">Shirts & Blouses</a></li>
+										</div>
+									</ul>
+								</li>
+								<li class="navbar__sub-item">
+									<ul class="navbar__element-list">
+										<li class="navbar__element-item navbar__element-item--header">fugiat provident
+											<span class="menu-icon navbar__element-icon element-btn-js">
+												<i class="menu-icon__plus fas fa-plus-square"></i>
+												<i class="menu-icon__minus fas fa-minus-square"></i>
+											</span>
+										</li>
+										<div class="navbar__element-sub-item element-item-js">
+											<li class="navbar__element-item"><a href="#" class="navbar__element-link">blazers & kimonos</a></li>
+											<li class="navbar__element-item"><a href="#" class="navbar__element-link">dressers</a></li>
+											<li class="navbar__element-item"><a href="#" class="navbar__element-link">jeans</a></li>
+											<li class="navbar__element-item"><a href="#" class="navbar__element-link">cardigans & sweaters</a></li>
+											<li class="navbar__element-item"><a href="#" class="navbar__element-link">shorts</a></li>
+										</div>
+										
+									</ul>
+								</li>
+								<li class="navbar__sub-item">
+									<ul class="navbar__element-list">
+										<li class="navbar__element-item navbar__element-item--header">repellendus
+											<span class="menu-icon navbar__element-icon element-btn-js">
+												<i class="menu-icon__plus fas fa-plus-square"></i>
+												<i class="menu-icon__minus fas fa-minus-square"></i>
+											</span>
+										</li>
+										<div class="navbar__element-sub-item element-item-js">
+											<li class="navbar__element-item"><a href="#" class="navbar__element-link">plans</a></li>
+											<li class="navbar__element-item"><a href="#" class="navbar__element-link">shorts</a></li>
+											<li class="navbar__element-item"><a href="#" class="navbar__element-link">t-shirt</a></li>
+											<li class="navbar__element-item"><a href="#" class="navbar__element-link">lingerie</a></li>
+											<li class="navbar__element-item"><a href="#" class="navbar__element-link">Cardigans & Sweaters</a></li>
+										</div>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="navbar__item"><a href="#" class="navbar__link"><span class="navbar__inner">sale<i class="fas fa-angle-down navbar__icon"></i></span> </a>
+							<ul class="navbar__sub-list navbar__sub-list--sale">
+								<li class="navbar__sub-item navbar__sub-item--sale">
+									<div class="sale">
+										<a href="#" class="sale__img-top">
+											<img src="img/large/asher_v-neck_cashmere_sweater_1_large.png" alt="" class="sale__picture">
+										</a>
+										<h4 class="sale__title"><a href="#" class="sale__link">Asher' V-Neck Cashmere...</a></h4>
+										<p class="sale__price">
+											<span class="sale__new-price">£27.88</span>
+											<span class="sale__old-price">£27.67</span>
+										</p>
+									</div>
+								</li>
+								<li class="navbar__sub-item navbar__sub-item--sale">
+									<div class="sale">
+										<a href="#" class="sale__img-top">
+											<img src="img/large/asymmetrical_collar_matte_jersey_dress_1_large.png" alt="" class="sale__picture">
+										</a>
+										<h4 class="sale__title"><a href="#" class="sale__link">Asymmetrical Collar Matte...</a></h4>
+										<p class="sale__price">
+											<span class="sale__new-price">£27.88</span>
+											<span class="sale__old-price"></span>
+										</p>
+									</div>
+								</li>
+								<li class="navbar__sub-item navbar__sub-item--sale">
+									<div class="sale">
+										<a href="#" class="sale__img-top">
+											<img src="img/large/belted_mulberry_silk_dress_1_large.png" alt="" class="sale__picture">
+										</a>
+										<h4 class="sale__title"><a href="#" class="sale__link">Belted Mulberry Silk Dress</a></h4>
+										<p class="sale__price">
+											<span class="sale__new-price">£27.88</span>
+											<span class="sale__old-price">£27.67</span>
+										</p>
+									</div>
+								</li>
+								<li class="navbar__sub-item navbar__sub-item--sale">
+									<div class="sale">
+										<a href="#" class="sale__img-top">
+											<img src="img/large/bleeker_pants_1_large.png" alt="" class="sale__picture">
+										</a>
+										<h4 class="sale__title"><a href="#" class="sale__link">Bicolor Techno Cotton Dress</a></h4>
+										<p class="sale__price">
+											<span class="sale__new-price">£27.88</span>
+											<span class="sale__old-price"></span>
+										</p>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li class="navbar__item"><a href="about.html" class="navbar__link"><span class="navbar__inner">about us</span></a></li>
+						<li class="navbar__item"><a href="contact.html" class="navbar__link"><span class="navbar__inner navbar__inner--last">contact us</span></a></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="main-content">
+				<section class="showcase">
+					<div class="container">
+						<div class="showcase__slider">
+							<div class="flexslider">
+							  <ul class="slides">
+							    <li>
+							      <img src="img/slide1_image.jpg" />
+							      <div class="flex-caption">
+							      	<div class="slide-card">
+							      		<h4 class="slide-card__offer">special offer</h4>
+							      		<h2 class="slide-card__season">summer</h2>
+							      		<h2 class="slide-card__collection">collection</h2>
+							      		<span class="slide-card__solde">40% off</span>
+							      		<p class="slide-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A debitis, reprehenderit cupiditate animi molestias laudantium architecto cum porro nam iste facere illum deserunt consequatur voluptatibus</p>
+							      		<span class="slide-card__btn"><a href="#" class="btn btn--sale" type="submit">show now</a></span>
+							      	</div>
+							      </div>
+							    </li>
+							    <li>
+							      <img src="img/slide2_image.jpg" />
+							      <div class="flex-caption">
+							      	<div class="slide-card">
+							      		<h4 class="slide-card__offer"></h4>
+							      		<h2 class="slide-card__season">winter</h2>
+							      		<h2 class="slide-card__collection">collection</h2>
+							      		<span class="slide-card__solde"></span>
+							      		<p class="slide-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A debitis, reprehenderit cupiditate animi molestias laudantium architecto cum porro nam iste facere illum deserunt consequatur voluptatibus</p>
+							      		<span class="slide-card__btn"><a href="#" class="btn btn--sale" type="submit">show now</a></span>
+							      	</div>
+							      </div>
+							    </li>
+							    <li>
+							      <img src="img/slide3_image.jpg" />
+							      <div class="flex-caption">
+							      	<div class="slide-card">
+							      		<h4 class="slide-card__offer">special offer</h4>
+							      		<h2 class="slide-card__season">dresses</h2>
+							      		<h2 class="slide-card__collection"></h2>
+							      		<span class="slide-card__solde">40% off</span>
+							      		<p class="slide-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A debitis, reprehenderit cupiditate animi molestias laudantium architecto cum porro nam iste facere illum deserunt consequatur voluptatibus</p>
+							      		<span class="slide-card__btn"><a href="#" class="btn btn--sale" type="submit">show now</a></span>
+							      	</div>
+							      </div>
+							    </li>
+							  </ul>
+							</div>
+						</div>
+						<ul class="card showcase__card clearfix">
+							<li class="card__item">
+								<a href="product.html" class="card__link">
+									<div class="card__top">
+										<img src="img/custom_showcase1_img.jpg" alt="" class="card__img-top">
+									</div>
+									<div class="card__block">
+										<h4 class="card__title">exepte</h4>
+										<h5 class="card__sub-title">non proiden</h5>
+										<p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus eaque similique blanditiis temporibus!</p>
+										<span class="card__btn">shop now!</span>
+									</div>
+								</a>	
+							</li>
+							<li class="card__item">
+								<a href="product.html" class="card__link">
+									<div class="card__top">
+										<img src="img/custom_showcase2_img.jpg" alt="" class="card__img-top">
+									</div>
+									<div class="card__block">
+										<h4 class="card__title">ur sint</h4>
+										<h5 class="card__sub-title">paqui officia</h5>
+										<p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, maxime, nostrum! Debitis, placeat.</p>
+										<span class="card__btn">shop now!</span>
+									</div>
+								</a>
+							</li>
+							<li class="card__item">
+								<a href="product.html" class="card__link">
+									<div class="card__top">
+										<img src="img/custom_showcase3_img.jpg" alt="" class="card__img-top">
+									</div>
+									<div class="card__block">
+										<h4 class="card__title">pariatur</h4>
+										<h5 class="card__sub-title">tanimide</h5>
+										<p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid perspiciatis eaque est saepe.</p>
+										<span class="card__btn">shop now!</span>
+									</div>
+								</a>	
+							</li>
+							<li class="card__item">
+								<a href="product.html" class="card__link">
+									<div class="card__top">
+										<img src="img/custom_showcase4_img.jpg" alt="" class="card__img-top">
+									</div>
+									<div class="card__block">
+										<h4 class="card__title">occaecat</h4>
+										<h5 class="card__sub-title">deserunt</h5>
+										<p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque quos, veritatis saepe.</p>
+										<span class="card__btn">shop now!</span>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="description clearfix">
+					<div class="container clearfix">
+						<div class="description__item">
+							<h3 class="description__title">welcome</h3>
+							<h4 class="description__sub-title">to our store</h4>
+							<p class="description__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, debitis, error? Temporibus modi tempore aspernatur necessitatibus non natus voluptates earum deleniti dignissimos distinctio quidem error molestiae alias enim, eveniet repudiandae aut rem ad soluta, repellat consequatur eos facilis, porro. Adipisci excepturi maiores itaque ullam placeat, magni iste nam, illo autem officia ut voluptate neque necessitatibus quas aliquid ipsam, exercitationem tempora!</p>
+						</div>
+						<div class="description__item">
+							<h3 class="description__title">about</h3>
+							<h4 class="description__sub-title">our store</h4>
+							<p class="description__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam voluptate dolore sed eligendi veniam, fugiat omnis adipisci ratione recusandae. Eos recusandae a illum alias, nihil labore quasi, nisi modi. Beatae quam temporibus nemo nesciunt enim, dolores repudiandae, sit quibusdam asperiores ab error ducimus laborum mollitia delectus eveniet. Dolor reiciendis, veniam in optio esse rem delectus est aspernatur! Nihil, reprehenderit. Repudiandae.</p>
+						</div>
+					</div>
+				</section>
+				<section class="product">
+					<div class="container">
+						<div class="product__content">
+							<h2 class="product__header">featured products</h2>
+							<div class="product__wrap-items clearfix">
+								<div class="product-card clearfix">
+									<a href="product.html" class="product-card__top">
+										<img src="img/large/asher_v-neck_cashmere_sweater_1_large.png" alt="" class="product-card__back-img">
+										<img src="img/large/asher_v-neck_cashmere_sweater_2_large.png" alt="" class="product-card__front-img">
+									</a>
+									<div class="product-card__block">
+										<h5 class="product-card__title">
+											<a href="#" class="product-card__link-title">Asher' V-Neck Cashmere...</a> 
+										</h5>
+										<p class="product__price">
+											<span class="product-card__new-price">£27.88</span>
+											<span class="product-card__old-price">£27.67</span>
+										</p>
+										<div class="product-card__wrap-btn">
+											<a href="#" class="btn btn--product product-card__btn">add to card</a>
+											<a href="#" class="product-card__info"><i class="fas fa-info-circle"></i></a>
+										</div>
+										<span>
+												<span class="product-card__new">new</span>
+												<span class="product-card__sale"></span>
+										</span>
+									</div>
+								</div>
+								<div class="product-card clearfix">
+									<a href="product.html" class="product-card__top">
+										<img src="img/large/asymmetrical_collar_matte_jersey_dress_1_large.png" alt="" class="product-card__back-img">
+										<img src="img/large/asymmetrical_collar_matte_jersey_dress_2_large.png" alt="" class="product-card__front-img">
+									</a>
+									<div class="product-card__block">
+										<h5 class="product-card__title">
+											<a href="#" class="product-card__link-title">Asymmetrical Collar Ma...</a> </h5>
+										<p class="product-card__price">
+											<span class="product-card__new-price">£27.88</span>
+											<span class="product-card__old-price"></span>
+										</p>
+										<div class="product-card__wrap-btn">
+											<a href="#" class="btn btn--product product-card__btn">add to card</a>
+											<a href="#" class="product-card__info"><i class="fas fa-info-circle"></i></a>
+										</div>
+										<span>
+												<span class="product-card__new">new</span>
+												<span class="product-card__sale">sale!</span>
+										</span>
+									</div>
+								</div>
+								<div class="product-card clearfix">
+									<a href="product.html" class="product-card__top">
+										<img src="img/large/belted_mulberry_silk_dress_1_large.png" alt="" class="product-card__back-img">
+										<img src="img/large/belted_mulberry_silk_dress_2_large.png" alt="" class="product-card__front-img">
+									</a>
+									<div class="product-card__block">
+										<h5 class="product-card__title">
+											<a href="#" class="product-card__link-title">Belted Mulberry Silk D...</a> </h5>
+										<p class="product-card__price">
+											<span class="product-card__new-price">£27.88</span>
+											<span class="product-card__old-price">£27.67</span>
+										</p>
+										<div class="product-card__wrap-btn">
+											<a href="#" class="btn btn--product product-card__btn">add to card</a>
+											<a href="#" class="product-card__info"><i class="fas fa-info-circle"></i></a>
+										</div>
+										<span>
+												<span class="product-card__new">new</span>
+												<span class="product-card__sale"></span>
+										</span>
+									</div>
+								</div>
+								<div class="product-card clearfix">
+									<a href="product.html" class="product-card__top">
+										<img src="img/large/bicolor_techno_cotton_dress_1_large.png" alt="" class="product-card__back-img">
+										<img src="img/large/bicolor_techno_cotton_dress_2_large.png" alt="" class="product-card__front-img">
+									</a>
+									<div class="product-card__block">
+										<h5 class="product-card__title">
+											<a href="#" class="product-card__link-title">Bicolor Techno Cotton ...</a> </h5>
+										<p class="product-card__price">
+											<span class="product-card__new-price">£27.88</span>
+											<span class="product-card__old-price">£27.67</span>
+										</p>
+										<div class="product-card__wrap-btn">
+											<a href="#" class="btn btn--product product-card__btn">add to card</a>
+											<a href="#" class="product-card__info"><i class="fas fa-info-circle"></i></a>
+										</div>
+										<span>
+												<span class="product-card__new">new</span>
+												<span class="product-card__sale"></span>
+										</span>
+									</div>
+								</div>
+								<div class="product-card clearfix">
+									<a href="product.html" class="product-card__top">
+										<img src="img/large/black_halo_wren_crepe_peplum_gown_1_large.png" alt="" class="product-card__back-img">
+										<img src="img/large/black_halo_wren_crepe_peplum_gown_2_large.png" alt="" class="product-card__front-img">
+									</a>
+									<div class="product-card__block">
+										<h5 class="product-card__title">
+											<a href="#" class="product-card__link-title">Black Halo 'Wren' Crep...</a> </h5>
+										<p class="product-card__price">
+											<span class="product-card__new-price">£27.88</span>
+											<span class="product-card__old-price">£27.67</span>
+										</p>
+										<div class="product-card__wrap-btn">
+											<a href="#" class="btn btn--product product-card__btn">add to card</a>
+											<a href="#" class="product-card__info"><i class="fas fa-info-circle"></i></a>
+										</div>
+										<span>
+												<span class="product-card__new">new</span>
+												<span class="product-card__sale">sale!</span>
+										</span>
+									</div>
+								</div>
+								<div class="product-card clearfix">
+									<a href="product.html" class="product-card__top">
+										<img src="img/large/bleeker_pants_1_large.png" alt="" class="product-card__back-img">
+										<img src="img/large/bleeker_pants_2_large.png" alt="" class="product-card__front-img">
+									</a>
+									<div class="product-card__block">
+										<h5 class="product-card__title">
+											<a href="#" class="product-card__link-title">Bleeker' Pants</a> </h5>
+										<p class="product-card__price">
+											<span class="product-card__new-price">£27.88</span>
+											<span class="product-card__old-price">£27.67</span>
+										</p>
+										<div class="product-card__wrap-btn">
+											<a href="#" class="btn btn--product product-card__btn">add to card</a>
+											<a href="#" class="product-card__info"><i class="fas fa-info-circle"></i></a>
+										</div>
+										<span>
+												<span class="product-card__new">new</span>
+												<span class="product-card__sale"></span>
+										</span>
+									</div>
+								</div>
+								<div class="product-card clearfix">
+									<a href="product.html" class="product-card__top">
+										<img src="img/large/boucle_stretch_wool_skirt_1_large.png" alt="" class="product-card__back-img">
+										<img src="img/large/boucle_stretch_wool_skirt_2_large.png" alt="" class="product-card__front-img">
+									</a>
+									<div class="product-card__block">
+										<h5 class="product-card__title">
+											<a href="#" class="product-card__link-title">Bouclé Stretch Wool Skirt</a> </h5>
+										<p class="product-card__price">
+											<span class="product-card__new-price">£27.88</span>
+											<span class="product-card__old-price"></span>
+										</p>
+										<div class="product-card__wrap-btn">
+											<a href="#" class="btn btn--product product-card__btn">add to card</a>
+											<a href="#" class="product-card__info"><i class="fas fa-info-circle"></i></a>
+										</div>
+										<span>
+												<span class="product-card__new">new</span>
+												<span class="product-card__sale"></span>
+										</span>
+									</div>
+								</div>
+								<div class="product-card clearfix">
+									<a href="product.html" class="product-card__top">
+										<img src="img/large/cashmere_sweater_1_large.png" alt="" class="product-card__back-img">
+										<img src="img/large/cashmere_sweater_2_large.png" alt="" class="product-card__front-img">
+									</a>
+									<div class="product-card__block">
+										<h5 class="product-card__title">
+											<a href="#" class="product-card__link-title">Cashmere Sweater</a> </h5>
+										<p class="product-card__price">
+											<span class="product-card__new-price">£27.88</span>
+											<span class="product-card__old-price"></span>
+										</p>
+										<div class="product-card__wrap-btn">
+											<a href="#" class="btn btn--product product-card__btn">add to card</a>
+											<a href="#" class="product-card__info"><i class="fas fa-info-circle"></i></a>
+										</div>
+										<span>
+												<span class="product-card__new">new</span>
+												<span class="product-card__sale">sale!</span>
+										</span>
+									</div>
+								</div>
+								<div class="product-card clearfix">
+									<a href="product.html" class="product-card__top">
+										<img src="img/large/contrast_back_zip_wool_knit_sweater_1_large.png" alt="" class="product-card__back-img">
+										<img src="img/large/contrast_back_zip_wool_knit_sweater_2_large.png" alt="" class="product-card__front-img">
+									</a>
+									<div class="product-card__block">
+										<h5 class="product-card__title">
+											<a href="#" class="product-card__link-title">Contrast Back Zip Wool...</a> </h5>
+										<p class="product-card__price">
+											<span class="product-card__new-price">£27.88</span>
+											<span class="product-card__old-price">£27.67</span>
+										</p>
+										<div class="product-card__wrap-btn">
+											<a href="#" class="btn btn--product product-card__btn">add to card</a>
+											<a href="#" class="product-card__info"><i class="fas fa-info-circle"></i></a>
+										</div>
+										<span>
+												<span class="product-card__new">new</span>
+												<span class="product-card__sale"></span>
+										</span>
+									</div>
+								</div>
+								<div class="product-card clearfix">
+									<a href="product.html" class="product-card__top">
+										<img src="img/large/cotton_blouse_regular_and_petite_1_large.png" alt="" class="product-card__back-img">
+										<img src="img/large/cotton_blouse_regular_and_petite_2_large.png" alt="" class="product-card__front-img">
+									</a>
+									<div class="product-card__block">
+										<h5 class="product-card__title">
+											<a href="#" class="product-card__link-title">Cotton Blouse (Regular...</a> </h5>
+										<p class="product-card__price">
+											<span class="product-card__new-price">£27.88</span>
+											<span class="produc-card__old-price"></span>
+										</p>
+										<div class="product-card__wrap-btn">
+											<a href="#" class="btn btn--product product-card__btn">add to card</a>
+											<a href="#" class="product-card__info"><i class="fas fa-info-circle"></i></a>
+										</div>
+										<span>
+												<span class="product-card__new">new</span>
+												<span class="product-card__sale"></span>
+										</span>
+									</div>
+								</div>
+								<div class="product-card clearfix">
+									<a href="product.html" class="product-card__top">
+										<img src="img/large/cowl_back_silk_dress_1_large.png" alt="" class="product-card__back-img">
+										<img src="img/large/cowl_back_silk_dress_2_large.png" alt="" class="product-card__front-img">
+									</a>
+									<div class="product-card__block">
+										<h5 class="product-card__title">
+											<a href="#" class="product-card__link-title">Cowl Back Silk Dress</a> </h5>
+										<p class="product-card__price">
+											<span class="product-card__new-price">£27.88</span>
+											<span class="product-card__old-price">£27.67</span>
+										</p>
+										<div class="product-card__wrap-btn">
+											<a href="#" class="btn btn--product product-card__btn">add to card</a>
+											<a href="#" class="product-card__info"><i class="fas fa-info-circle"></i></a>
+										</div>
+										<span>
+												<span class="product-card__new">new</span>
+												<span class="product-card__sale"></span>
+										</span>
+									</div>
+								</div>
+								<div class="product-card clearfix">
+									<a href="product.html" class="product-card__top">
+										<img src="img/large/crisscross_chiffon_gown_nordstrom_exclusive_1_large.png" alt="" class="product-card__back-img">
+										<img src="img/large/crisscross_chiffon_gown_nordstrom_exclusive_2_large.png" alt="" class="product-card__front-img">
+									</a>
+									<div class="product-card__block">
+										<h5 class="product-card__title">
+											<a href="#" class="product-card__link-title">Crisscross Chiffon Gow...</a> </h5>
+										<p class="product-card__price">
+											<span class="product-card__new-price">£27.88</span>
+											<span class="product-card__old-price">£27.67</span>
+										</p>
+										<div class="product-card__wrap-btn">
+											<a href="#" class="btn btn--product product-card__btn">add to card</a>
+											<a href="#" class="product-card__info"><i class="fas fa-info-circle"></i></a>
+										</div>
+										<span>
+												<span class="product-card__new">new</span>
+												<span class="product-card__sale"></span>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="recent-post"> 
+					<div class="container">
+						<div class="recent-post__content">
+							<h2 class="recent-post__title">recent<span class="recent-post__light">post</span></h2>
+							<div class="recent-post__wrap-card clearfix">
+								<div class="post-card clearfix">
+									<div class="post-card__top">
+										<img src="img/blog1.jpg" alt="" class="post-card__img-card">
+										<div class="post-card__over">Tuesday, March 31, 2015</div>
+									</div>
+									<div class="post-card__block">
+										<h4 class="post-card__title"><a class="post-card__link-title" href="#">LOREM IPSUM DOLOR SIT</a></h4>
+										<p class="post-card__text">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+									</div>
+								</div>
+								<div class="post-card clearfix">
+									<div class="post-card__top">
+										<img src="img/blog2.jpg" alt="" class="post-card__img-card">
+										<div class="post-card__over">Monday, May 15, 2016</div>
+									</div>
+									<div class="post-card__block">
+										<h4 class="post-card__title"><a class="post-card__link-title" href="#">LOREM IPSUM DOLOR SIT</a></h4>
+										<p class="post-card__text">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+									</div>
+								</div>
+								<div class="post-card clearfix">
+									<div class="post-card__top">
+										<img src="img/blog3.jpg" alt="" class="post-card__img-card">
+										<div class="post-card__over">Sunday, April 23, 2015</div>
+									</div>
+									<div class="post-card__block">
+										<h4 class="post-card__title"><a class="post-card__link-title" href="#">LOREM IPSUM DOLOR SIT</a></h4>
+										<p class="post-card__text">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="free-shop">
+					<div class="container ">
+						<div class="free-shop__wrap">
+							<h3 class="free-shop__title">free <span class="free-shop__light">shopping</span></h3>
+						   <p class="free-shop__text">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit .</p>
+						</div>
+					</div>
+				</section>
+				<footer class="footer">
+					<div class="container">
+						<div class="footer__wrap-item clearfix">
+							<ul class="footer__list">
+								<li class="footer__item footer__item--title">
+									information
+								</li>
+								<li class="footer__item">
+									<a href="collection.html" class="a footer__link" href="#">home</a>
+								</li>
+								<li class="footer__item">
+									<a href="collection.html" class="a footer__link" href="#">search</a>
+								</li>
+								<li class="footer__item">
+									<a href="collection.html" class="a footer__link" href="#">blog</a>
+								</li>
+								<li class="footer__item">
+									<a href="collection.html" class="a footer__link" href="#">about us</a>
+								</li>
+								<li class="footer__item">
+									<a href="collection.html" class="a footer__link" href="#">documentation</a>
+								</li>
+								<li class="footer__item">
+									<a href="collection.html" class="a footer__link" href="#">contact us</a>
+								</li>
+							</ul>
+							<ul class="footer__list">
+								<li class="footer__item footer__item--title">
+									products
+								</li>
+								<li class="footer__item">
+									<a href="collection.html" class="a footer__link" href="#">basic</a>
+								</li>
+								<li class="footer__item">
+									<a href="collection.html" class="a footer__link" href="#">blazers & sweaters</a>
+								</li>
+								<li class="footer__item">
+									<a href="collection.html" class="a footer__link" href="#">cardigants & sweater</a>
+								</li>
+								<li class="footer__item">
+									<a href="collection.html" class="a footer__link" href="#">dresses</a>
+								</li>
+								<li class="footer__item">
+									<a href="collection.html" class="a footer__link" href="#">jackets & coats</a>
+								</li>
+								<li class="footer__item">
+									<a href="collection.html" class="a footer__link" href="#">jeans</a>
+								</li>
+							</ul>
+							<ul class="footer__list">
+								<li class="footer__item footer__item--title">
+									-
+								</li>
+								<li class="footer__item">
+									<a href="collection.html" class="a footer__link" href="#">pants</a>
+								</li>
+								<li class="footer__item">
+									<a href="collection.html" class="a footer__link" href="#">shirts & blouse</a>
+								</li>
+								<li class="footer__item">
+									<a href="collection.html" class="a footer__link" href="#">shorts</a>
+								</li>
+								<li class="footer__item">
+									<a href="collection.html" class="a footer__link" href="#">skirts</a>
+								</li>
+								<li class="footer__item">
+									<a href="collection.html" class="a footer__link" href="#">top</a>
+								</li>
+							</ul>
+							<ul class="footer__list">
+								<li class="footer__item footer__item--title">
+									my account
+								</li>
+								<li class="footer__item">
+									<a href="collection.html" class="a footer__link" href="#">my account</a>
+								</li>
+								<li class="footer__item">
+									<a href="collection.html" class="a footer__link" href="#">my addresses</a>
+								</li>
+								<li class="footer__item">
+									<a href="collection.html" class="a footer__link" href="#">my cart</a>
+								</li>
+							</ul>
+							<div class="footer__social">
+								<a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></i></a>
+								<a href="#" class="footer__social-link"><i class="fab fa-twitter"></i></a>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> -->
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+		<script src="js/jquery.flexslider.js"></script>	
+		<script type="text/javascript">
+			$(document).ready(function() {
+			 	  $('.flexslider').flexslider({
+				    animation: "fade"
+				  });
+			});
+		</script>
+	</body>
+</html>
+
